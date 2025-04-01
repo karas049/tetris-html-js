@@ -141,5 +141,17 @@ I planned to implement features like the next block preview, sound effects (with
 日本語
 次のブロック、効果音（重ねて再生）、スコア記録なども実装しようとしましたが、ひとつ加えると別の機能が壊れてしまうため、とりあえずゲームとして成立する段階で完成とすることにしました。
 
+English
+17 BGM tracks created with Suno.ai are included.
+The images were generated with NijiJourney.
+
+한국어
+Suno.ai로 만든 BGM 17곡이 첨부되어 있습니다.
+이미지는 니지저니로 만들었습니다.
+
+日本語
+Suno.aiで作成したBGM17曲が含まれています。
+画像はNijiJourneyで生成しました。
+
 ![image](https://github.com/user-attachments/assets/e5abcd9b-07d1-4296-82c8-a852322abb7c)
 ![image](https://github.com/user-attachments/assets/5cfd4a8d-aa9a-4950-94a7-8b98164ec0f8)
