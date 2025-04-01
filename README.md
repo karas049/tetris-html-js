@@ -1,5 +1,12 @@
 # tetris-html-js
 A simple Tetris clone game made with HTML, CSS, and JavaScript.
+You can download it from the link below.
+
+HTML, CSS, JavaScript로 만든 간단한 테트리스 클론 게임입니다.
+다운로드는 아래 링크를 참고해주세요.
+
+HTML、CSS、JavaScriptで作られたシンプルなテトリスクローンゲームです。
+ダウンロードは下のリンクからどうぞ。
 
 https://drive.google.com/file/d/1oahrAVf66GSKNaorUsBfgkJ-8Mz7doLu/view?usp=sharing
 
