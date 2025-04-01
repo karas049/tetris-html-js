@@ -99,44 +99,10 @@ tetris-clone
 - **上矢印キー**: ブロックを回転
 - **スペースキー**: ブロックを即座に落下
 
----
 
 ## Installation (설치 / インストール)
 
-### English
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/tetris-clone.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd tetris-clone
-   ```
-3. Open `src/index.html` in your browser to play.
-
-### 한국어
-1. 저장소를 클론합니다:
-   ```bash
-   git clone https://github.com/yourusername/tetris-clone.git
-   ```
-2. 프로젝트 디렉토리로 이동합니다:
-   ```bash
-   cd tetris-clone
-   ```
-3. `src/index.html`을 브라우저에서 열어 게임을 실행합니다.
-
-### 日本語
-1. リポジトリをクローンします:
-   ```bash
-   git clone https://github.com/yourusername/tetris-clone.git
-   ```
-2. プロジェクトディレクトリに移動します:
-   ```bash
-   cd tetris-clone
-   ```
-3. ブラウザで`src/index.html`を開いてゲームをプレイします。
-
----
+zip
 
 ## License (라이선스 / ライセンス)
 
