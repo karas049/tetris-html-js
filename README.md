@@ -140,3 +140,6 @@ I planned to implement features like the next block preview, sound effects (with
 
 日本語
 次のブロック、効果音（重ねて再生）、スコア記録なども実装しようとしましたが、ひとつ加えると別の機能が壊れてしまうため、とりあえずゲームとして成立する段階で完成とすることにしました。
+
+![image](https://github.com/user-attachments/assets/e5abcd9b-07d1-4296-82c8-a852322abb7c)
+![image](https://github.com/user-attachments/assets/5cfd4a8d-aa9a-4950-94a7-8b98164ec0f8)
