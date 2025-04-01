@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Clone</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Control Info */
+        .control-info {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            height: 25%; /* 높이를 25%로 설정 */
+            overflow-y: auto; /* 내용이 넘칠 경우 스크롤 추가 */
+        }
+
+        /* Hidden class for popup */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 게임 타이틀 -->
+        <header class="game-title">
+            <h1>Tetris Clone</h1>
+        </header>
+
+        <!-- 게임 영역 -->
+        <main class="game-area">
+            <!-- 왼쪽 영역: Button Section, Game Info, Character -->
+            <div class="left-panel">
+                <!-- 버튼 섹션 -->
+                <section class="button-section">
+                    <button id="start-button">▶ Start</button>
+                    <button id="pause-button">⏸ Pause</button>
+                </section>
+
+                <!-- 게임 정보 -->
+                <section class="game-info">
+                    <h2>Game Info</h2>
+                    <p>Score: <span id="score">0</span></p>
+                    <p>Level: <span id="level">1</span></p>
+                    <p>Speed: <span id="speed">1</span></p>
+                </section>
+
+                <!-- 캐릭터 대화 -->
+                <section class="character">
+                    <img src="assets/character.png" alt="Character">
+                    <p id="character-dialogue">Welcome to Tetris!</p>
+                </section>
+            </div>
+
+            <!-- 중앙 영역: 테트리스 게임 -->
+            <section class="tetris-game">
+                <canvas id="tetrisCanvas" width="360" height="720"></canvas>
+            </section>
+
+            <!-- 오른쪽 영역: Controls, Audio Controls -->
+            <div class="right-panel">
+                <!-- 컨트롤 정보 -->
+                <section class="control-info">
+                    <h2>Controls</h2>
+                    <ul>
+                        <li>Space: Hard Drop</li>
+                        <li>Arrow Up: Rotate</li>
+                        <li>Arrow Down: Soft Drop</li>
+                        <li>Arrow Left/Right: Move</li>
+                    </ul>
+                    <h2>Rule</h2>
+                    <ul>
+                        <li>1.Complete a line to clear it.</li>
+                        <li>2.Game over if blocks reach the top.</li>
+                        <li>3.Score increases with each line cleared.</li>
+                        <li>4.Level up for faster speed.</li>
+                    </ul>
+                    <h2>Scoring</h2>
+                    <ul>
+                        <li>Remove 1 line: +10 points</li>
+                        <li>Remove 2 lines: +20 points</li>
+                        <li>Remove 3 lines: +30 points</li>
+                        <li>Remove 4 lines: +40 points</li>
+                        <li>Remove all blocks from the area +100 points</li>
+                    </ul>
+                </section>
+
+                <!-- BGM 및 효과음 조절 -->
+                <section class="audio-controls">
+                    <h2>Audio Controls</h2>
+                    <label for="bgm-volume">BGM Volume</label>
+                    <input type="range" id="bgm-volume" min="0" max="100" value="50" title="Adjust BGM volume">
+                    <p id="bgm-name">No BGM Playing</p> <!-- 현재 재생 중인 BGM 이름 표시 -->
+                </section>
+            </div>
+        </main>
+
+        <!-- 게임 오버 팝업 -->
+        <div id="game-over-popup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Game Over</h2>
+                <p>Your final score: <span id="final-score">0</span></p>
+                <button id="close-game-over-button">Close</button>
+            </div>
+        </div>
+
+        <!-- Pause 팝업 -->
+        <div id="pause-popup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Game Paused</h2>
+                <p>The game is currently paused.</p>
+                <button id="close-pause-button">Resume</button>
+            </div>
+        </div>
+
+        <!-- Developer Info -->
+        <section class="developer-info">
+            <h2>Developer Info</h2>
+            <div class="developer-images">
+                <img src="assets/image1.png" alt="Developer 1"> <!-- "image" 단어 제거 -->
+                <img src="assets/image2.png" alt="Developer 2"> <!-- "image" 단어 제거 -->
+                <img src="assets/image3.png" alt="Developer 3"> <!-- "image" 단어 제거 -->
+                <p>Welcome!</p>
+                <p>Developed by [Hitujisya]</p>
+                <p>Sound by [Suno]</p>
+                <p>Graphics by [nijijourney]</p>
+                <p>Version: 1.0.0</p>
+                <p>GitHub: <a href="https://github.com/karas049" target="_blank" rel="noopener noreferrer">https://github.com/karas049</a></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts/utils.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

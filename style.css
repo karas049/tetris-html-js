@@ -1,0 +1,292 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/background.jpg') no-repeat center center fixed; /* 배경 이미지 경로 수정 */
+    background-size: cover; /* 배경 이미지가 화면에 꽉 차도록 설정 */
+    color: #fff; /* 기본 글자색을 하얀색으로 설정 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 공통 섹션 스타일 */
+section {
+    background: rgba(0, 0, 0, 0.7); /* 반투명한 검정색 배경 */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444; /* 약간의 테두리 추가 */
+    color: #fff; /* 글자색을 하얀색으로 설정 */
+}
+
+/* 게임 타이틀 */
+.game-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-title h1 {
+    font-size: 2.5rem;
+    color: #000000; /* 검정색 글자 */
+}
+
+/* 게임 영역 */
+.game-area {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3열 레이아웃 */
+    gap: 20px;
+}
+
+/* 왼쪽 영역 (Ranking, Game Info, Developer Info) */
+.left-panel {
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    gap: 10px; /* 각 섹션 간 간격 */
+}
+
+/* 오른쪽 영역 (Controls, Next Block, Audio Controls) */
+.right-panel {
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    gap: 10px; /* 각 섹션 간 간격 */
+}
+
+/* 공통 스타일: Ranking, Game Info, Developer Info */
+.ranking-system,
+.game-info,
+.developer-info,
+.control-info,
+.audio-controls,
+.character,
+.button-section {
+    background: rgba(0, 0, 0, 0.7); /* 반투명한 검정색 배경 */
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff; /* 하얀색 글자 */
+}
+
+.ranking-system h2,
+.game-info h2,
+.developer-info h2,
+.control-info h2,
+.audio-controls h2,
+.button-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* 하얀색 글자 */
+}
+
+.ranking-system ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking-system li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.game-info p,
+.developer-info p,
+.control-info ul li,
+.audio-controls label,
+.audio-controls input,
+.character p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fff; /* 하얀색 글자 */
+}
+
+/* Control Info */
+.control-info {
+    background: rgba(0, 0, 0, 0.7) !important; /* 반투명한 검정색 배경 */
+    padding: 15px !important;
+    border: 1px solid #444 !important;
+    border-radius: 5px !important;
+    color: #fff !important; /* 하얀색 글자 */
+    height: 25%; /* 높이를 25%로 설정 */
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 추가 */
+}
+
+.control-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* 하얀색 글자 */
+}
+
+.control-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* 여백 제거 */
+}
+
+.control-info li {
+    margin: 3px 0; /* 기존 5px에서 줄임 */
+    font-size: 0.9rem; /* 글꼴 크기 축소 */
+    color: #fff; /* 하얀색 글자 */
+}
+
+/* 테트리스 게임 영역 */
+.tetris-game {
+    text-align: center;
+}
+
+.tetris-game canvas {
+    display: block;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0.7) !important; /* 반투명한 검정색 배경 */
+}
+
+.game-buttons {
+    margin-bottom: 10px;
+}
+
+.game-buttons button {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* 게임 정보 */
+.game-info {
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+/* BGM 및 효과음 조절 */
+.audio-controls {
+    background: rgba(0, 0, 0, 0.7); /* 반투명한 검정색 배경 */
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff; /* 하얀색 글자 */
+}
+
+/* 개발자 정보 */
+.developer-info {
+    text-align: center;
+}
+
+/* Character Section */
+.character {
+    text-align: center;
+    margin-top: 10px; /* Game Info와 간격 추가 */
+}
+
+.character img {
+    width: 200px; /* 이미지의 너비를 120px로 설정 */
+    height: auto; /* 높이는 비율에 따라 자동 조정 */
+    border-radius: 50%; /* 원형 유지 */
+    margin-bottom: 10px;
+}
+
+.character p {
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+}
+
+.developer-images {
+    margin-top: 20px;
+}
+
+.developer-images h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.developer-images img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* 버튼 섹션 */
+.button-section {
+    text-align: center;
+    margin-bottom: 10px; /* 아래 섹션과 간격 추가 */
+}
+
+.button-section button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-section button:hover {
+    background-color: #0056b3;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #444; /* 테두리 추가 */
+    background-color: #000; /* 검정색 배경 */
+}
+
+/* 팝업 창 스타일 */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.popup-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.popup-content button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+/* 숨김 상태 */
+.hidden {
+    display: none;
+}
