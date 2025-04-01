@@ -1,6 +1,11 @@
 # tetris-html-js
 A simple Tetris clone game made with HTML, CSS, and JavaScript.
 
+https://drive.google.com/file/d/1oahrAVf66GSKNaorUsBfgkJ-8Mz7doLu/view?usp=sharing
+
+![image](https://github.com/user-attachments/assets/e5abcd9b-07d1-4296-82c8-a852322abb7c)
+![image](https://github.com/user-attachments/assets/5cfd4a8d-aa9a-4950-94a7-8b98164ec0f8)
+
 # Tetris Clone
 
 ## Introduction (English)
@@ -152,6 +157,3 @@ Suno.ai로 만든 BGM 17곡이 첨부되어 있습니다.
 日本語
 Suno.aiで作成したBGM17曲が含まれています。
 画像はNijiJourneyで生成しました。
-
-![image](https://github.com/user-attachments/assets/e5abcd9b-07d1-4296-82c8-a852322abb7c)
-![image](https://github.com/user-attachments/assets/5cfd4a8d-aa9a-4950-94a7-8b98164ec0f8)
