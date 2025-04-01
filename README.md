@@ -99,11 +99,6 @@ tetris-clone
 - **上矢印キー**: ブロックを回転
 - **スペースキー**: ブロックを即座に落下
 
-
-## Installation (설치 / インストール)
-
-zip
-
 ## License (라이선스 / ライセンス)
 
 This project is licensed under the MIT License. Feel free to modify and distribute as you wish.
